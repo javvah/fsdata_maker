@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>STM32 F767ZI httpd server test page with CGI</title>
+ <meta charset="utf-8" />
+ </head>
+<body>
+<p>This allows you to control the LEDs: LED1 and LED2. You have to click on "Send" button to change the LEDs</p>
+
+<form method="get" action="/leds.cgi">
+<input value="1" name="led1" type="checkbox">Green
+<br>
+<input value="1" name="led2" type="checkbox">Blue
+<br>
+<input value="1" name="led3" type="checkbox">Red
+<br>
+<input value="Send" type="submit">
+</form>
+</body>
+</html>
